@@ -6,19 +6,28 @@ int maxArea(vector<int>& height);
 int min(int x, int y);
 
 int main() {
-	vector<int> data = {7,7,7,7};
+	vector<int> data = {1,8,6,2,5,4,8,3,7};
 	cout << maxArea(data) << endl;
 	return 0;
 }
 
 int maxArea(vector<int>& height) {
 	int maxArea = 0;
-	for (int i = 0; i < height.size(); i++) {
-		for (int j = i+1; j < height.size(); j++) {
-			int currentArea = (j - i) * min(height[i], height[j]);
-			if (currentArea > maxArea) {
-				maxArea = currentArea;
-			}
+	int lhsIndex = 0;
+	int rhsIndex = height.size() - 1;
+	while (lhsIndex != rhsIndex) {
+		int currentArea = (rhsIndex - lhsIndex) * min(height[lhsIndex], height[rhsIndex]);
+		if (currentArea > maxArea) {
+			maxArea = currentArea;
+		}
+		if (height[lhsIndex] > height[rhsIndex]) {
+			rhsIndex--;
+		}
+		else if (height[lhsIndex] < height[rhsIndex]) {
+			lhsIndex++;
+		}
+		else {
+			rhsIndex--;
 		}
 	}
 	return maxArea;
