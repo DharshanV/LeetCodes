@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reverse Integer", "Reverse 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Container With Most Water", "Container With Most Water\Container With Most Water.vcxproj", "{EB787729-9D05-4CCC-ABEF-2389B3CD20F8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N-Queens", "N-Queens\N-Queens.vcxproj", "{AAB037DC-1924-409E-9B5F-425955A21D97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{EB787729-9D05-4CCC-ABEF-2389B3CD20F8}.Release|x64.Build.0 = Release|x64
 		{EB787729-9D05-4CCC-ABEF-2389B3CD20F8}.Release|x86.ActiveCfg = Release|Win32
 		{EB787729-9D05-4CCC-ABEF-2389B3CD20F8}.Release|x86.Build.0 = Release|Win32
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Debug|x64.ActiveCfg = Debug|x64
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Debug|x64.Build.0 = Debug|x64
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Debug|x86.ActiveCfg = Debug|Win32
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Debug|x86.Build.0 = Debug|Win32
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Release|x64.ActiveCfg = Release|x64
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Release|x64.Build.0 = Release|x64
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Release|x86.ActiveCfg = Release|Win32
+		{AAB037DC-1924-409E-9B5F-425955A21D97}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
